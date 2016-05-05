@@ -6,7 +6,7 @@
     "react",
     "spinner"
   ],
-  "main": "js/app.jsx",
+  "main": "dist/react-simple-spinner.js",
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.1"
   },
