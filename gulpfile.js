@@ -34,10 +34,9 @@ gulp.task('bundle:watch', function() {
       .pipe(buffer())
       .pipe(rename({
         basename: 'bundle',
-        dirname: 'js',
         extname: '.js'
       }))
-      .pipe(gulp.dest('./build'));
+      .pipe(gulp.dest('./'));
   }
 
   watcher.on('update', bundle);

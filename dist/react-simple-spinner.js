@@ -175,7 +175,19 @@ Spinner.propTypes = {
 },{"react":34}],2:[function(require,module,exports){
 'use strict';
 
-module.exports = require('./Spinner.react');
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Spinner = require('./Spinner.react');
+
+var _Spinner2 = _interopRequireDefault(_Spinner);
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+exports.default = _Spinner2.default;
 
 },{"./Spinner.react":1}],3:[function(require,module,exports){
 "use strict";

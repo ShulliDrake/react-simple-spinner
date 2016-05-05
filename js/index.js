@@ -1,1 +1,3 @@
-module.exports = require('./Spinner.react');
+import Spinner from './Spinner.react';
+
+export default Spinner;
