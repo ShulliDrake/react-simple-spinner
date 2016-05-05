@@ -61,6 +61,7 @@ gulp.task('bundle', function(done) {
 gulp.task('eslint', function () {
   return gulp.src([
     'js/**/*.js',
+    'js/**/*.jsx',
     '!node_modeuls/**'
   ])
     .pipe(eslint())

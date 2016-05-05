@@ -9,6 +9,10 @@
         2,
         "single"
     ],
+    "comma-dangle": [
+      2,
+      "always-multiline"
+    ],
     "linebreak-style": [
         2,
         "unix"
