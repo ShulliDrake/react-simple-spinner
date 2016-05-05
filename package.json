@@ -1,15 +1,14 @@
 {
-  "name": "react-spinner",
+  "name": "react-simple-spinner",
   "version": "0.0.1",
-  "description": "React Spinner",
+  "description": "React Simple Spinner",
   "keywords": [
     "react",
     "spinner"
   ],
   "main": "js/app.jsx",
-  "dependencies": {
-    "react": "^15.0.2",
-    "react-dom": "^15.0.2"
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
@@ -23,6 +22,7 @@
     "gulp-eslint": "^2.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.7",
+    "react-dom": "^15.0.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
@@ -37,12 +37,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShulliDrake/react-spinner.git"
+    "url": "git+https://github.com/ShulliDrake/react-simple-spinner.git"
   },
   "author": "Nozomi Lipps",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ShulliDrake/react-spinner/issues"
+    "url": "https://github.com/ShulliDrake/react-simple-spinner/issues"
   },
-  "homepage": "https://github.com/ShulliDrake/react-spinner#readme"
+  "homepage": "https://github.com/ShulliDrake/react-simple-spinner#readme"
 }
