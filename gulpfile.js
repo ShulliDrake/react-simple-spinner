@@ -25,7 +25,7 @@ var getWatchifyStream = function(entry) {
 }
 
 gulp.task('bundle:watch', function() {
-  var entry = 'js/app.js';
+  var entry = 'examples/app.js';
   var watcher = getWatchifyStream(entry);
   function bundle() {
     return watcher
@@ -46,16 +46,15 @@ gulp.task('bundle:watch', function() {
   return bundle();
 });
 
-gulp.task('bundle', function(done) {
+gulp.task('build', function(done) {
   return browserify({
-    entries: 'js/app.js',
+    entries: 'js/index.js',
     extensions: ['.jsx'],
-    debug: true,
   })
     .transform(babelify, {presets: ['es2015', 'react']})
     .bundle()
-    .pipe(source('bundle.js'))
-    .pipe(gulp.dest('./build/js'));
+    .pipe(source('react-simple-spinner.js'))
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('eslint', function () {
