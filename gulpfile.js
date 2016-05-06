@@ -45,17 +45,6 @@ gulp.task('bundle:watch', function() {
   return bundle();
 });
 
-gulp.task('build', function(done) {
-  return browserify({
-    entries: 'js/index.js',
-    extensions: ['.jsx'],
-  })
-    .transform(babelify, {presets: ['es2015', 'react']})
-    .bundle()
-    .pipe(source('react-simple-spinner.js'))
-    .pipe(gulp.dest('./dist'));
-});
-
 gulp.task('eslint', function () {
   return gulp.src([
     'js/**/*.js',
