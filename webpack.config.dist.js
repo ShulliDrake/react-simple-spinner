@@ -1,8 +1,10 @@
 module.exports = {
-  entry: './examples/app.js',
+  entry: './js/index.js',
   output: {
-    path: './examples/',
-    filename: 'bundle.js'
+    path: './dist/',
+    filename: 'spinner.js',
+    library: 'ReactSimpleSpinner',
+    libraryTarget: 'umd',
   },
   module: {
     loaders: [
@@ -15,6 +17,14 @@ module.exports = {
         }
       }
     ]
+  },
+  externals: {
+    'react': {
+      root: 'React',
+      commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react'
+    }
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
