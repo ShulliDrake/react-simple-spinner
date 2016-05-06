@@ -26,6 +26,10 @@ const styles = {
 
 export default class Spinner extends React.Component {
 
+  componentDidMount() {
+    this.addAnimationRules();
+  }
+
   addAnimationRules() {
     let stylesheet = document.styleSheets[0];
     let styleEl;
@@ -71,8 +75,6 @@ export default class Spinner extends React.Component {
   }
 
   render() {
-    this.addAnimationRules();
-
     const spinnerStyle = Object.assign({}, styles.spinner);
     const containerStyle = Object.assign({}, styles.container);
 
