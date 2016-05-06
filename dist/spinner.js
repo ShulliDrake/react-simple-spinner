@@ -126,6 +126,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  _createClass(Spinner, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.addAnimationRules();
+	    }
+	  }, {
 	    key: 'addAnimationRules',
 	    value: function addAnimationRules() {
 	      var stylesheet = document.styleSheets[0];
@@ -176,8 +181,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      this.addAnimationRules();
-
 	      var spinnerStyle = Object.assign({}, styles.spinner);
 	      var containerStyle = Object.assign({}, styles.container);
 
