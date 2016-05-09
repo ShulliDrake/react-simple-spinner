@@ -103,8 +103,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	    borderLeftColor: 'rgba(40, 210, 164, .3)',
 	    borderRadius: '100%',
 	    margin: 'auto',
-	    height: '35px',
-	    width: '35px'
+	    marginTop: '-20px',
+	    position: 'relative',
+	    top: '50%',
+	    transform: 'translateY(-50%)',
+	    height: '40px',
+	    width: '40px'
 	  },
 	  container: {
 	    position: 'absolute',
@@ -112,7 +116,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    right: '0px',
 	    bottom: '0px',
 	    left: '0px',
-	    background: 'rgba(230, 230, 230, .3)'
+	    height: '100%',
+	    background: 'rgba(255, 255, 255, .7)'
 	  }
 	};
 
@@ -195,6 +200,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (this.props.size) {
 	        spinnerStyle.height = this.props.size;
 	        spinnerStyle.width = this.props.size;
+	        spinnerStyle.marginTop = '-' + parseInt(this.props.size) / 2 + 'px';
 	      }
 
 	      if (this.props.spinnerWidth) {
