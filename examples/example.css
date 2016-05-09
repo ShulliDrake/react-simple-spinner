@@ -1,0 +1,8 @@
+header {
+  padding: 20px;
+}
+
+#spinner {
+  position: relative;
+  height: 500px;
+}
